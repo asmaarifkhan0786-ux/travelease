@@ -1,0 +1,503 @@
+
+/* TravelEase Management Pages */
+.te-page {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 28px 30px 38px;
+    color: #1b2638;
+}
+
+.te-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.te-eyebrow {
+    display: block;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+    color: #6577d9;
+    margin-bottom: 9px;
+}
+
+.te-heading h2 {
+    font-size: clamp(23px, 2vw, 30px);
+    font-weight: 800;
+    letter-spacing: -.8px;
+    margin: 0 0 8px;
+    color: #17243b;
+}
+
+.te-heading p,
+.te-panel-head p {
+    color: #8993a5;
+    font-size: 12px;
+    margin: 0;
+}
+
+.te-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.te-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border-radius: 8px;
+    padding: 11px 16px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.te-primary {
+    color: #fff;
+    background: #465fe5;
+    box-shadow: 0 4px 12px #465fe51a;
+}
+
+.te-primary:hover {
+    background: #3049ca;
+    transform: translateY(-1px);
+}
+
+.te-outline {
+    color: #34425a;
+    border-color: #e1e6ee;
+    background: white;
+}
+
+.te-outline:hover {
+    background: #f5f7fb;
+    border-color: #bfc9dc;
+}
+
+.te-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px;
+    margin-bottom: 25px;
+}
+
+.te-stat {
+    padding: 22px;
+    background: white;
+    border: 1px solid #e9edf4;
+    border-radius: 12px;
+    box-shadow: 0 3px 14px #1c315008;
+    min-width: 0;
+}
+
+.te-stat > span {
+    display: block;
+    color: #7f8a9d;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.te-stat strong {
+    display: block;
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -.8px;
+    color: #1a2940;
+    overflow-wrap: anywhere;
+}
+
+.te-stat small {
+    display: block;
+    margin-top: 10px;
+    color: #8b95a6;
+    font-size: 11px;
+}
+
+.te-green { color: #13845b !important; }
+.te-orange { color: #bd8128 !important; }
+.te-red { color: #d34f5b !important; }
+.te-blue { color: #4964db !important; }
+
+.te-panel {
+    background: white;
+    border: 1px solid #e8edf4;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px #1c315006;
+}
+
+.te-panel-head {
+    padding: 22px 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.te-panel-head h3 {
+    font-size: 15px;
+    font-weight: 800;
+    color: #1b2940;
+    margin: 0 0 7px;
+}
+
+.te-input {
+    width: 245px;
+    max-width: 100%;
+    height: 39px;
+    border: 1px solid #e1e6ee;
+    border-radius: 7px;
+    padding: 0 12px;
+    color: #27354a;
+    background: white;
+    outline: none;
+    font-size: 12px;
+}
+
+.te-input:focus {
+    border-color: #7185ef;
+    box-shadow: 0 0 0 3px #465fe514;
+}
+
+.te-input::placeholder {
+    color: #a2aaba;
+}
+
+.te-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.te-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.te-table thead {
+    background: #f8f9fc;
+}
+
+.te-table th {
+    color: #8993a4;
+    font-size: 9px;
+    letter-spacing: .7px;
+    font-weight: 800;
+    padding: 15px 19px;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.te-table td {
+    padding: 18px 19px;
+    font-size: 11px;
+    color: #4b586d;
+    border-bottom: 1px solid #f0f2f6;
+}
+
+.te-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.te-table tbody tr:hover {
+    background: #fafbff;
+}
+
+.te-table td strong {
+    color: #26344a;
+    font-size: 11px;
+}
+
+.te-sub {
+    display: block;
+    margin-top: 5px;
+    color: #9aa3b2;
+    font-size: 10px;
+}
+
+.te-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 6px 10px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.te-status.confirmed,
+.te-status.paid {
+    color: #14805a;
+    background: #e8f7ef;
+}
+
+.te-status.pending,
+.te-status.partial {
+    color: #a96e18;
+    background: #fff3dc;
+}
+
+.te-status.cancelled {
+    color: #c04451;
+    background: #ffebed;
+}
+
+.te-guide-filters {
+    justify-content: flex-start;
+}
+
+.te-guide-filters > div {
+    flex: 1;
+    min-width: 180px;
+}
+
+.te-guide-grid {
+    padding: 22px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.te-guide-card {
+    padding: 20px;
+    border: 1px solid #e9edf4;
+    border-radius: 11px;
+    transition: .2s ease;
+    min-width: 0;
+}
+
+.te-guide-card:hover {
+    border-color: #c9d2fb;
+    box-shadow: 0 8px 24px #243b650d;
+    transform: translateY(-2px);
+}
+
+.te-guide-card[hidden] {
+    display: none !important;
+}
+
+.te-guide-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 17px;
+}
+
+.te-guide-avatar {
+    width: 53px;
+    height: 53px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #e9edff, #d8e2ff);
+    border-radius: 13px;
+    color: #425bd2;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.te-guide-card h3 {
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    color: #233148;
+}
+
+.te-guide-specialty {
+    font-size: 11px;
+    color: #7a88d9;
+    margin-bottom: 18px;
+}
+
+.te-guide-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f2f6;
+}
+
+.te-guide-detail span {
+    color: #929bad;
+    font-size: 10px;
+}
+
+.te-guide-detail strong {
+    text-align: right;
+    overflow-wrap: anywhere;
+    font-size: 10px;
+    color: #344158;
+}
+
+.te-guide-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 17px;
+}
+
+.te-guide-bottom > span {
+    color: #cb9330;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.te-guide-bottom small {
+    color: #929bad;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.te-small {
+    padding: 8px 10px;
+    font-size: 10px;
+}
+
+.te-empty {
+    padding: 25px;
+    color: #8993a5;
+    text-align: center;
+}
+
+.te-modal {
+    width: min(460px, calc(100% - 30px));
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #e7ebf2;
+    border-radius: 14px;
+    background: white;
+    color: #1b2638;
+    box-shadow: 0 25px 100px #14243b40;
+}
+
+.te-modal::backdrop {
+    background: #0c18318a;
+    backdrop-filter: blur(3px);
+}
+
+.te-modal form {
+    padding: 20px;
+}
+
+.te-modal .te-panel-head {
+    padding: 0 0 18px;
+    margin-bottom: 18px;
+}
+
+.te-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    margin: 15px 0 7px;
+    color: #435067;
+}
+
+.te-full {
+    width: 100%;
+}
+
+.te-modal .te-full.te-btn {
+    margin-top: 22px;
+    height: 42px;
+}
+
+.te-note {
+    color: #8b95a6;
+    font-size: 10px;
+    line-height: 1.6;
+    margin-top: 12px;
+}
+
+@media (max-width: 1100px) {
+    .te-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .te-guide-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .te-page {
+        padding: 23px 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .te-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .te-heading .te-btn {
+        width: 100%;
+    }
+
+    .te-stats {
+        gap: 10px;
+    }
+
+    .te-stat {
+        padding: 15px;
+    }
+
+    .te-stat strong {
+        font-size: 22px;
+    }
+
+    .te-guide-grid {
+        grid-template-columns: 1fr;
+        padding: 13px;
+    }
+
+    .te-panel-head {
+        padding: 17px;
+    }
+
+    .te-panel-head .te-input {
+        width: 100%;
+    }
+
+    .te-page {
+        padding: 20px 12px;
+    }
+
+    .te-actions {
+        width: 100%;
+    }
+
+    .te-actions .te-btn {
+        flex: 1;
+    }
+}
+
+@media print {
+    .sidebar,
+    .topbar,
+    .te-actions,
+    .te-heading .te-btn {
+        display: none !important;
+    }
+
+    .te-page {
+        padding: 0;
+    }
+
+    .te-panel,
+    .te-stat {
+        box-shadow: none;
+    }
+}
